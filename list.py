@@ -36,8 +36,8 @@ for fruit in fruits:
 print(fruits)
 # fruits=["apple", "banana", "orange", "grape", "kiwi"]
 # fruits[0]=["mulberry",blueberry",watermelon","papaya",strawberry"]
-#fruits[0:2]=["mulberry", "blueberry"]
-#fruits[2:3]=["mulberry", "blueberry"]
+# fruits[0:2]=["mulberry", "blueberry"]
+# fruits[2:3]=["mulberry", "blueberry"]
 
 
 
@@ -80,3 +80,22 @@ fa=list(fruits)
 fruits.reverse()
 print(fruits)
 print(fa)
+
+tropical_fruits=['mango','green apple']
+print(fruits+tropical_fruits)
+
+#list comprehension
+#newlist=[expression for item in iterable if condition]
+
+num=[2,3,4,87,94,897,37,6546]
+
+odd_num =[x for x in num if x%2!=0]
+print(odd_num)
+
+numbers = [2,3,4,87,94,897,37,6546]
+odd_numbers=[]
+for x in numbers:
+  if x%2!=0:
+    odd_numbers.append(x)
+    
+print(odd_numbers)
