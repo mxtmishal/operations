@@ -53,4 +53,40 @@
 # print(first_line)
 # print(remaining)
 
+#///////////////MODULE ACCESS CHEYUNADU//////////////////////////
+
+import functions
+from functions import is_even
+print(is_even(8),'file handling')
+print(functions.is_even(10))
+
+
+import os
+
+# os.remove('sample.txt')
+
+if os.path.exists('sample.txt'):
+    os.remove('sample.txt')
+    
+# os.rmdir('folders')
+
+import math
+import random
+from datetime import datetime,date
+
+print(math.sqrt(16))
+print(math.ceil(8.47))
+print(math.floor(8.47))
+print(math.pi)
+
+print(math.floor(random.random()*1e6))
+print(random.randint(1,9))
+print(random.choice(['blue','black','green']))
+now = datetime.now()
+print(now)
+print(now.date())
+print(now.month)
+print(now.day)
+print(now.year)
+print(date.today())
 
